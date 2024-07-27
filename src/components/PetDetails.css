@@ -1,0 +1,38 @@
+.pet-details-card {
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  padding: 15px; /* Padding for spacing inside the card */
+  margin: 20px auto; /* Center the card */
+  max-width: 700px; /* Breadth of the card */
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+}
+
+.pet-details-title {
+  color: #333;
+  font-size: 1.4rem; /* Title size */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.pet-details-text {
+  color: #555;
+  font-size: 0.9rem; /* Font size for text */
+}
+
+.pet-details-images {
+  margin-bottom: 15px; /* Space below images */
+}
+
+.pet-details-image-container {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px; /* Space between images */
+}
+
+.pet-details-image {
+  width: 100%; /* Full width of container */
+  height: 300px; /* Increased height for better fit */
+  object-fit: scale-down; /* Ensures image covers the container */
+}

@@ -8,7 +8,7 @@ const PetDetailsPage = () => {
 
   return (
     <div>
-      <h1>Pet Details</h1>
+     <h1 className="text-center my-4">Pet Details</h1>
       <ErrorBoundary>
         <PetDetails id={id} />
       </ErrorBoundary>
