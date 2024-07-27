@@ -51,7 +51,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Pet Listing</h1>
+       <h1 className="text-center my-4">Pet Listing</h1>
       <SearchForm onSearch={handleSearch} />
       <ErrorBoundary>
         <PetList pets={pets} loading={loading} error={error} />

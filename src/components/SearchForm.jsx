@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './SearchForm.css'; // Import CSS file
 
 const SearchForm = ({ onSearch }) => {
   const [animal, setAnimal] = useState('');
@@ -16,7 +17,7 @@ const SearchForm = ({ onSearch }) => {
       if (searchResult && searchResult.length > 0) {
         navigate(`/pets/${searchResult[0].id}`); // Navigate to the first pet's detail
       } else {
-        // alert('No pets found');
+        setError('No pets found.');
       }
     } catch (err) {
       console.error('Search error:', err);

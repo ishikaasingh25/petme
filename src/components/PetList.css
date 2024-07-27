@@ -1,36 +1,63 @@
-/* Container for pet cards */
-.pet-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; /* Space between items */
-  justify-content: space-between; /* Distribute items evenly */
-}
-
-/* Each pet card styling */
 .pet-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  width: calc(30% - 1rem); /* Adjust width to make cards smaller */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-decoration: none; /* Remove underline from Link */
-  color: inherit; /* Inherit color from parent */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  background-color: #f7f9fc; /* Light pastel blue */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures card takes full height of the column */
+  overflow: hidden; /* Prevents overflow of content */
 }
 
-/* Align text in the center */
-.pet-info {
-  text-align: center;
+.pet-card:hover {
+  transform: translateY(-10px);
+  background-color: #e3f2fd; /* Slightly darker pastel blue on hover */
 }
 
-/* Space above images */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures body takes full height of the card */
+}
+
 .pet-images {
-  margin-top: 1rem;
+  margin-bottom: 15px; /* Adjusted spacing for better layout */
 }
 
-/* Pet image styling */
-.pet-image {
+.pet-images img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  max-height: 200px; /* Set a maximum height for the images */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title, .card-text {
+  color: #3a506b; /* Dark pastel blue */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Adjust font size */
+  margin-bottom: 5px; /* Space below the title */
+}
+
+.card-text {
+  font-size: 1rem; /* Adjust font size */
+}
+
+.slick-prev,
+.slick-next {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  z-index: 1; /* Ensure the arrows are above other elements */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+
+.slick-dots li button:before {
+  color: #3a506b; /* Dark pastel blue */
 }
