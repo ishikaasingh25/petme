@@ -1,0 +1,36 @@
+/* Container for pet cards */
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Space between items */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Each pet card styling */
+.pet-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: calc(30% - 1rem); /* Adjust width to make cards smaller */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Remove underline from Link */
+  color: inherit; /* Inherit color from parent */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Align text in the center */
+.pet-info {
+  text-align: center;
+}
+
+/* Space above images */
+.pet-images {
+  margin-top: 1rem;
+}
+
+/* Pet image styling */
+.pet-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
